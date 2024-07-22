@@ -1,0 +1,1 @@
+A 100 sided dice is rolled until 53 or greater than number appears. When it appears the sum of all the entries until that point is calculated. What is the expected value of sum ?
