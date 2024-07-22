@@ -1,0 +1,11 @@
+The statement "If the size of a page increases, then the working set decreases" is partially correct:
+1. The number of pages in the working set might decrease.
+2. The total memory required by the working set might not decrease proportionally and could be affected by fragmentation and data locality.
+
+Larger page sizes mean more data is brought into memory with each page fault, reducing the likelihood of subsequent page faults if the process accesses nearby data.
+Fewer pages overall can reduce the frequency of page faults.
+
+Round Robin scheduling can resemble First Come First Served scheduling when the ratio of job time to the number of jobs
+decreases. This is because, in such cases, jobs are short and frequent, making the context switching overhead minimal 
+compared to the total time taken for each job. Therefore, RR may effectively process jobs in the order they arrive, 
+similar to FCFS, provided the time quantum is large enough relative to the job times.
