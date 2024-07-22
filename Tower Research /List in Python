@@ -1,0 +1,14 @@
+def my_func(x):
+    x[0] = 200
+    x = [200]
+
+lst = [1, 2, 3]
+my_func(lst)
+print(lst)
+
+Output : [200, 2, 3]
+
+Reason : The function my_func takes a list x as an argument.
+Inside the function, x[0] = 200 modifies the first element of the list x to be 200.
+Then, x = [200] assigns a new list [200] to the local variable x, but this does not affect the original list lst outside the function.
+When you print lst, you see that the first element has been changed to 200, but the rest of the list remains the same.
